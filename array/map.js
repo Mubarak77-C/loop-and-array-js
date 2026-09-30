@@ -1,7 +1,7 @@
 // console.log('hi')
 //'use strict'; is used to enforce stricter parsing and error handling in your JavaScript code.
 'use strict';
-
+//map returns a new array and does not change the original array.
 function addOne(num){
 return num+1;
 }
