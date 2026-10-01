@@ -75,3 +75,16 @@ console.log(arrslice);
 let numarr= [10,20,30,40,52]
 console.log(numarr.slice(2)); //30,40,52
 console.log(numarr)
+
+//#sort
+
+function copySorted(arr4){
+   return arr4.slice().sort();
+}
+
+let arr4 = ["HTML", "JavaScript", "CSS"];
+
+let sorted = copySorted(arr4);
+
+console.log( "created new arr with sorted",sorted ); // CSS, HTML, JavaScript
+console.log("original sort arr" ,arr4 ); // HTML, JavaScript, CSS (no changes)
