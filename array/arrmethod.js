@@ -33,3 +33,24 @@ let filtered = filterRange(arr, 1, 4);
 alert( filtered ); // 3,1 (matching values)
 
 alert( arr ); // 5,3,8,1 (not modified)
+
+
+//###
+//only understand here filterRangeplace not used .filter() look down
+
+//it between rage from 1 to 4 and rest in array should delete as false
+function filterRangeInPlace(arr1,a,b){
+    for(let i=0 ; i<arr1.length;i++){
+        let value=arr1[i];
+        if(value<a || value>b){
+            arr1.splice(i,1);
+            i--;
+        }
+    }
+}
+
+let arr1 = [5, 3, 8, 1];
+
+filterRangeInPlace(arr1, 1, 4); // removed the numbers except from 1 to 4
+
+alert( arr1 ); // [3, 1]
