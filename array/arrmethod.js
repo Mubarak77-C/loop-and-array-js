@@ -172,3 +172,21 @@ let mary = { name: "Mary", age: 29 };
 let arr6 = [john, pete, mary];
 
 alert(getAverageAge(arr6)); // 28
+
+//unique fetch or remove 
+function unique(strs){
+    let result = [];
+    for(let str of strs){
+        console.log(str)
+       if (!result.includes(str)){
+        result.push(str);
+       }
+    }
+    return result
+}
+
+
+let str1=['bye','ok','bye','ok','bye','ok']
+
+let resultUnique=unique(str1);
+console.log("unique word are : ", resultUnique);
