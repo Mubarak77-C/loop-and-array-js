@@ -103,3 +103,4 @@ let calc = new Calculator;  //with new keyword obj array created
 
 console.log( calc.calculate("3 + 7") ); // 10
 
+
