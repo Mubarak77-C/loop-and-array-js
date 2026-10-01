@@ -114,4 +114,18 @@ let arr5=[1,2,3,4,5];
 shuffle(arr5);
 console.log(arr5);
 
+//same as above but here used by developer for shuffle fisher hater algorithm
+//for loop from backward length then formula then swap;
+
+
+function shuffle1(array){
+    for (let i = array.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]]; // Swap elements
+    }
+    return array // if not written this return statement then o/p undefined 
+}
+let  array= ['abc','def','ghi','jkl']
+let resultshuffle= shuffle1(array) ;
+console.log(resultshuffle)
 
