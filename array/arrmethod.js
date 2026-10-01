@@ -30,9 +30,9 @@ let arr = [5, 3, 8, 1];
 
 let filtered = filterRange(arr, 1, 4);
 
-alert( filtered ); // 3,1 (matching values)
+//alert( filtered ); // 3,1 (matching values)
 
-alert( arr ); // 5,3,8,1 (not modified)
+//alert( arr ); // 5,3,8,1 (not modified)
 
 
 //###
@@ -53,4 +53,25 @@ let arr1 = [5, 3, 8, 1];
 
 filterRangeInPlace(arr1, 1, 4); // removed the numbers except from 1 to 4
 
-alert( arr1 ); // [3, 1]
+//alert( arr1 ); // [3, 1]
+
+//sorting
+
+let arrs= [5, 2, 1, -10, 8];
+
+// ... your code to sort it in decreasing order
+
+arrs.sort((a,b)=> b-a)
+//alert( arrs); // 8, 5, 2, 1, -10
+
+//slice() - it mean slice bread and give remainigng 
+//it work on both array number and string 
+//slice(2)- it start from index 2 upto length will display rest from index 0 ,1 it cut slice ignore
+let arrslice='hello'; //string 
+console.log(arrslice.slice(1)); //it iwll ello where h will cut
+console.log(arrslice);
+
+//with nunber arr
+let numarr= [10,20,30,40,52]
+console.log(numarr.slice(2)); //30,40,52
+console.log(numarr)
