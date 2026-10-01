@@ -88,3 +88,18 @@ let sorted = copySorted(arr4);
 
 console.log( "created new arr with sorted",sorted ); // CSS, HTML, JavaScript
 console.log("original sort arr" ,arr4 ); // HTML, JavaScript, CSS (no changes)
+
+//
+
+class Calculator {
+  calculate(expression) {
+    // A simple evaluation for demonstration
+    return eval(expression); 
+  }
+}
+
+//it create an object by new
+let calc = new Calculator;  //with new keyword obj array created
+
+console.log( calc.calculate("3 + 7") ); // 10
+
