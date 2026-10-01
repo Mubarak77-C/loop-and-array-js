@@ -103,4 +103,15 @@ let calc = new Calculator;  //with new keyword obj array created
 
 console.log( calc.calculate("3 + 7") ); // 10
 
+//shufle by random number
+//JavaScript matches arguments to parameters by position, not by name.
+//mean down instead array we can use same array name as arr5; result same
+function shuffle(array){
+    array.sort(()=>Math.random() - 0.5); //i forget to give parenthesis () in random as random() where output in series only arr display while it random shuffle while each run
+}
+
+let arr5=[1,2,3,4,5];
+shuffle(arr5);
+console.log(arr5);
+
 
