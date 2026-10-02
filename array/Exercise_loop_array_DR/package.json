@@ -1,0 +1,16 @@
+{
+  "name": "exercise_loop_array_dr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "repeatstring.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "jest": "^30.5.2"
+  }
+}

@@ -1,0 +1,6 @@
+# Ignore dependencies folder (crucial, never push this!)
+node_modules/
+
+# Optional: Ignore log files and OS specific files
+*.log
+.DS_Store
