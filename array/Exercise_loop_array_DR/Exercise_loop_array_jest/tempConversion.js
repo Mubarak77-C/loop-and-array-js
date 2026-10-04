@@ -1,7 +1,7 @@
 console.log('hi')
 
 //formula celcius = (x × ⁠9/5⁠ + 32) °F
-//x °F ≘ (x − 32) × ⁠5/9⁠ °C        #farenite
+//x °F ≘ (x − 32) × ⁠5/9⁠ °C        #this is celciyse
 
 //#dry run
 // function tempConversion(num){
@@ -15,3 +15,17 @@ console.log('hi')
 
 //jest test with 2 function 
 
+const convertToCelsius= function (fahrenheit){
+ let celcius = (fahrenheit -32) * 5/9;
+ return Number(celcius.toFixed(1));
+}
+
+const convertToFahrenheit = function (celcius){
+ let fahrenheit = (celcius *9/5+32)
+ return Number(fahrenheit.toFixed(1))
+}
+
+module.exports =  {
+    convertToCelsius,
+    convertToFahrenheit
+};
